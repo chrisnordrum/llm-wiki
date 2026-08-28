@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "matcher": "prompt_input_exit|logout|other",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/wiki-session-end.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

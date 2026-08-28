@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Obsidian
+# Vault config is tracked (core-plugins, appearance, graph) so the vault opens
+# the same way anywhere. Per-machine UI state and caches are not.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Claude Code — machine-local permission grants, not shared config
+.claude/settings.local.json
+
+# Automated ingest scratch (see ~/.claude/hooks/wiki-ingest-run.sh)
+.wiki-state/
+
+# Editors
+*.swp
+*~
+.idea/
+.vscode/
