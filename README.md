@@ -81,11 +81,14 @@ end. Also the things I measured and then deliberately *didn't* build.
 
 ## Credit
 
-The pattern is Karpathy's — the three layers, ingest/query/lint, and the argument for
-compounding synthesis over re-derivation all come from
-[his gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). What's
-mine is the automation around it: the session pipeline, the reader/writer agent split,
-and the `/gaps` workflow.
+**The LLM Wiki pattern is [Andrej Karpathy](https://github.com/karpathy)'s**, introduced in
+[this gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). The three
+layers, the ingest / query / lint workflows, and the central argument for compounding
+synthesis over query-time re-derivation are all from there. This repo is an implementation
+of that pattern, and it exists because the idea was worth building.
+
+What's mine is only the automation layered on top: the session-ingest pipeline, the
+reader/writer agent split, and the `/gaps` workflow.
 
 ## License
 

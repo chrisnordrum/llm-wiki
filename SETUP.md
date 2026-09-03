@@ -34,6 +34,11 @@ cd ~/llm-wiki
 git init && git add -A && git commit -m "Initial wiki"
 ```
 
+> **`~/llm-wiki` must not already exist.** If it does, `cp` copies the scaffold *inside* it
+> and you get `~/llm-wiki/scaffold/` — `CLAUDE.md` and `.claude/commands/` land a level too
+> deep, so the schema never loads and the slash commands silently don't exist. Move the
+> existing directory aside first, or pick another path.
+
 Your wiki is now a git repo, so every change is recoverable and you can see exactly what
 the LLM did. That matters more than usual here — an agent is going to be editing these
 files.
