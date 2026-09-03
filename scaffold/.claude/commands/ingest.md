@@ -14,8 +14,9 @@ Follow the **INGEST** workflow defined in `CLAUDE.md` exactly:
 3. Reconcile against existing pages in `pages/` — update existing pages where the knowledge
    belongs, create new ones only when needed. Flag any contradictions.
 4. Cross-link touched/new pages with `[[slug]]` links (both directions where sensible).
-5. Update frontmatter (`aliases:`, `updated:`, `sources:`) and `pages/index.md` if a
-   top-level page was added.
+5. Update frontmatter (`aliases:`, `updated:`, `sources:`). **Add every new page to
+   `pages/index.md`** — mandatory, not just top-level ones. A page missing from the index
+   is effectively invisible, because that's what retrieval reads first.
 6. Append an entry to `log.md`.
 
 Bias toward fewer, richer pages. Show me a short summary of what you created/updated when done.

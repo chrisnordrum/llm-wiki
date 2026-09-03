@@ -42,13 +42,15 @@ the wiki; never write.** If an ingest or query surfaces a change worth making in
 say so plainly and let the human make it in that repo, where its own conventions,
 `CLAUDE.md`, and git history apply.
 
-## Two domains
+## Three domains
 
-This wiki covers two kinds of knowledge. Every page declares which via `domain:`.
+This wiki covers three kinds of knowledge. Every page declares which via `domain:`.
 
 - `personal` — second-brain content: articles read, notes, ideas, people, meetings, decisions.
 - `code` — project/codebase knowledge: architecture, design decisions, gotchas, module
   entity pages, how-tos.
+- `general` — knowledge belonging to neither: concepts, methodology, reference material.
+  The pages shipped with this scaffold use it.
 
 Keep them in the same `pages/` folder (cross-domain links are valuable), but tag each page.
 
@@ -177,7 +179,7 @@ ask them as one numbered list; then fold the answers back in as an ingest.
 2. **Ask** — one numbered list grouped by kind, with enough context to answer each without
    going hunting, and a note on which two matter most.
 3. **Reconcile** — save the answers to `sources/` first as a primary source, then run the
-   INGEST workflow over them. **His answers outrank every inference in the wiki.** Mark
+   INGEST workflow over them. **Their answers outrank every inference in the wiki.** Mark
    corrections as corrections, in place and dated.
 
 The **highest-value questions are unresolved outcomes** — pages saying *applied*, *pending*,
@@ -206,7 +208,7 @@ Full procedure and hard-won failure modes: `.claude/commands/gaps.md`.
 - Created: [[new-page]]
 - Corrected: [[page]] (was X, is Y — why the wiki had it wrong)
 - Outcomes recorded: [[page]] (the in-flight claims now resolved)
-- Still open: <what he didn't answer, so the next run starts here>
+- Still open: <what they didn't answer, so the next run starts here>
 ```
 
 ---
